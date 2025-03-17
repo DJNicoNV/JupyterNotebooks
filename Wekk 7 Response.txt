@@ -1,0 +1,11 @@
+Using **normalized ratings** instead of actual ratings has both advantages and disadvantages.
+
+#### **Advantages of Normalization:**
+1. **Eliminates Bias from Individual Rating Scales:** Some users may consistently give high or low ratings. Normalization ensures that each user’s ratings are scaled comparably, preventing bias from affecting recommendations.
+2. **Enables Fair Comparisons:** Since different users may use different portions of the rating scale, normalization brings all ratings to a common scale, making it easier to compare preferences across users.
+
+#### **Disadvantages of Normalization:**
+1. **Loses Absolute Preference Information:** If a user only rates movies they love (e.g., giving only 4s and 5s), normalization forces these ratings to a full scale (0 to 1), misrepresenting their preferences.
+2. **Can Introduce Artificial Differences:** Users with little variance in their ratings may see artificial exaggeration in their scaled ratings, making small differences appear more significant than they are.
+
+While normalization is useful for certain analytical and predictive tasks, it should be applied carefully, considering the data context and the goals of the recommendation system.
